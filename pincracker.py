@@ -8,7 +8,7 @@ import json
 try:
     import config
 except ImportError as e:
-    if path.isfile('config.py'):
+    if path.isfile('config-template.py'):
         raise
     else:
         raise ImportError('[FAILURE] The config.py file could not be found. Make sure you have made a config.py file using config-template.py.')
